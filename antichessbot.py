@@ -5,6 +5,7 @@ import chess
 
 #note that player here is the bot
 #This function should probably have a while loop which iterates while game is not over
+#The function should also read the moves we play as input so we have a back and forth
 def play(player):
     return 0
 
