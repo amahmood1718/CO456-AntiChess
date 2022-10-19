@@ -6,7 +6,6 @@ import random
 #The play function is the one that is called to play against the bot
 #note that player here is the bot
 def play(player):
-
     #first move
     board = chess.Board()
     if player == "white":
@@ -21,7 +20,6 @@ def play(player):
         board.push_san(bot_move)
         move = input()
         board.push_san(move)
-
     pass
 
 #this function returns the random move to be played
