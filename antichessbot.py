@@ -43,7 +43,7 @@ def random_move(board):
 def legal_captures(board, legal_moves):
     captures = []
     for x in legal_moves:
-        z = chess.parse_square(x[2:])
+        z = chess.parse_square(x[2:4])
         if board.piece_at(z) != None:
             captures.append(x)
     return captures
