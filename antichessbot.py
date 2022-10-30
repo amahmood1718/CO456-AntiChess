@@ -29,7 +29,7 @@ def play(player):
     if board.outcome() == None:
         print("1/2-1/2")
     else:
-        print(board.outcome())
+        print(board.result())
     pass
 
 
