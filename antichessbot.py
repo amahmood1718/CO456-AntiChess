@@ -18,20 +18,20 @@ def play(player):
     board.push_san(move)
     
     #game plays until it is over
-    while not (board.is_game_over() or board.can_claim_draw()):
+   while not (board.is_game_over(claim_draw = True)):
         
         bot_move = random_move(board)
         print(bot_move)
         board.push_san(bot_move)
         move = input()
         board.push_san(move)
-        
-    if (board.result == "*"):
+
+    if board.outcome() == None:
         print("1/2-1/2")
     else:
-        print(board.result())
-        
+        print(board.outcome())
     pass
+
 
 #this function returns the random move to be played
 def random_move(board):
