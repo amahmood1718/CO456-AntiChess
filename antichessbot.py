@@ -25,7 +25,7 @@ def play(player):
         move = input()
         board.push_san(move)
 
-    if not (board.result == "1-0" or board.result == "0-1"):
+    if not (board.result() == "1-0" or board.result() == "0-1"):
         print("1/2-1/2")
     else:
         print(board.result())
