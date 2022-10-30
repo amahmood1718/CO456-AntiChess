@@ -1,7 +1,7 @@
 import chess
 import random
 
-"""Remind me to teach you how to set up a custom board so that you can do your testing"""
+"""First input (on line 56) is to indicate who is playing!!!!!!!!!!!!!!!!!"""
 
 #The play function is the one that is called to play against the bot
 #note that player here is the bot
@@ -52,3 +52,5 @@ def legal_captures(board, legal_moves):
         if board.is_capture(x):
             captures.append(str(x))
     return captures
+
+play(input())
