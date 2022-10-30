@@ -25,7 +25,8 @@ def play(player):
         board.push_san(bot_move)
         move = input()
         board.push_san(move)
-
+        
+    print(board.result())
     pass
 
 #this function returns the random move to be played
