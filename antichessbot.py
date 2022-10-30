@@ -18,8 +18,7 @@ def play(player):
     board.push_san(move)
     
     #game plays until it is over
-   while not (board.is_game_over(claim_draw = True)):
-        
+    while not (board.is_game_over(claim_draw = True)):
         bot_move = random_move(board)
         print(bot_move)
         board.push_san(bot_move)
