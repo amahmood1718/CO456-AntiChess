@@ -25,11 +25,12 @@ def play(player):
         move = input()
         board.push_san(move)
 
-    if board.outcome() == None:
+    if not (board.result == "1-0" or board.result == "0-1"):
         print("1/2-1/2")
     else:
         print(board.result())
     pass
+    
 
 
 #this function returns the random move to be played
