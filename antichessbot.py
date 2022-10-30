@@ -1,11 +1,8 @@
 import chess
 import random
 
-"""First input (on line 56) is to indicate who is playing!!!!!!!!!!!!!!!!!"""
-
 #The play function is the one that is called to play against the bot
 #note that player here is the bot
-"""You probably want to print the board somewhere here for testing or not idrc"""
 def play(player):
 
     #first move
