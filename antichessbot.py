@@ -18,8 +18,9 @@ def play(player):
         bot_move = random_move(board)
         print(bot_move)
         board.push_san(bot_move)
-        move = input()
-        board.push_san(move)
+        if not (board.is_game_over(claim_draw = True)):
+            move = input()
+            board.push_san(move)
 
     if not (board.result() == "1-0" or board.result() == "0-1"):
         print("1/2-1/2")
