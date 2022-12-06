@@ -1,5 +1,7 @@
 import chess
 import random
+import sys
+
 
 #The play function is the one that is called to play against the bot
 #note that player here is the bot
@@ -18,16 +20,17 @@ def play(player):
         bot_move = random_move(board)
         print(bot_move)
         board.push_san(bot_move)
-        if not (board.is_game_over(claim_draw = True)):
-            move = input()
-            board.push_san(move)
+        if (board.is_game_over(claim_draw = True)):
+            break
+        move = input()
+        board.push_san(move)
 
     if not (board.result() == "1-0" or board.result() == "0-1"):
         print("1/2-1/2")
     else:
         print(board.result())
     pass
-    
+
 #this function returns the random move to be played
 def random_move(board):
     #convert standard to coordinate
@@ -53,4 +56,6 @@ def legal_captures(board, legal_moves):
             captures.append(str(x))
     return captures
 
-play(input())
+#selecting player and running the game
+n = sys.argv
+play(n[1])
