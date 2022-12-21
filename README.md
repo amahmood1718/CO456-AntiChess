@@ -13,7 +13,7 @@ All moves are in coordinate notation (eg. b2b3).
 
 #### Sources
 The following were consulted for the project:  
-[Chess Library](https://www.geeksforgeeks.org/chess-library-in-python/)  
+[Chess Library](https://github.com/niklasf/python-chess)  (Owner: Niklas Fiekas)  
 [Chess Library Documentation](https://python-chess.readthedocs.io/en/latest/)  
 [Additional Documentation](https://pypi.org/project/chess/)  
 
